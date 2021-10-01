@@ -11,7 +11,7 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigtion-link" href="about.html">Главная</a>
+          <a class="navigtion-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigtion-link" href="about.html">О Седоне</a>
@@ -67,6 +67,7 @@
                   <span class="control-label">Wi-Fi</span>
               </label>
             </li>
+          </ul>
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья:</legend>
@@ -102,21 +103,21 @@
           <button class="range-toggle toggle-max" type="button">
             <span class="visually-hidden">Изменить максимальную цену.</span>
           </button>
-            <label for="" class="catalog-filter-label"> от
-              <input type="number" class="catalog-filter-input" name="min-price" placeholder="от">
+            <label class="catalog-filter-label"> от
+              <input type="number" class="catalog-filter-input" name="min-price">
             </label>
-            <label for="" class="catalog-filter-label"> до
-              <input type="number" class="catalog-filter-input" name="max-price" placeholder="до">
+            <label class="catalog-filter-label"> до
+              <input type="number" class="catalog-filter-input" name="max-price">
             </label>
         </fieldset>
        <div class="buttons">
-         <input type="submit" value="применить">
-         <input type="reset" value="сбросить">
-       </div>
-       <div>
-          <h2 class="search-hotels">Найдено гостиниц: 38</h2>
+          <button type="submit">применить</button>
+          <button type="reset">сбросить</button>
        </div>
       </form>
+      <div>
+        <p class="search-hotels">Найдено гостиниц: 38</p>
+     </div>
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
           <select name="sorting" id="sorting" class="select-control">
@@ -127,83 +128,67 @@
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
       <a href="#" class="sorting-catalog-button">
-        <span class="visually-hidden">Каталог товаров</span>
+        <span class="visually-hidden">отобразить в виде карточек</span>
       </a>
       <a href="#" class="sorting-cards-button">
-        <span class="visually-hidden">Показать карточки</span>
+        <span class="visually-hidden">отобразить в виде карточек с подробным описанием</span>
       </a>
       <a href="#" class="sorting-button">
-        <span class="visually-hidden">Показать список</span>
+        <span class="visually-hidden">отобразить в виде списка</span>
       </a>
       <ul class="product-list">
         <li class="product-card">
+          <img src="" alt=" гостинница Amara" class="product-card-image">
           <a href="" class="product-card-link">
-            <img src="" alt="" class="product-card-image">
             <h3 class="product-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="product-card-item">Гостиница</p>
           <span class="product-card-price">От 4000 ₽</span>
           <a href="#" class="product-card-button button">подробнее</a>
           <a href="#" class="product-card-button button">В избранное</a>
+          <img class="product-card-star" src="#" alt="рейтинг звездочки">
+          <p class="product-card-rating">Рейтинг: 8,5</p>
         </li>
         <li class="product-card">
+          <img src="" alt="мотель Desert" class="product-card-image">
           <a href="" class="product-card-link">
-            <img src="" alt="" class="product-card-image">
             <h3 class="product-card-title">Desert Quail Inn</h3>
           </a>
           <p class="product-card-item">Мотель</p>
           <span class="product-card-price">От 3000 ₽</span>
           <a href="#" class="product-card-button button">подробнее</a>
           <a href="#" class="product-card-button button">В избранное</a>
+          <img class="product-card-star" src="#" alt="рейтинг звездочки">
+          <p class="product-card-rating">Рейтинг: 8,9</p>
         </li>
         <li class="product-card">
+          <img src="" alt="апартаменты Villas" class="product-card-image">
           <a href="" class="product-card-link">
-            <img src="" alt="" class="product-card-image">
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="product-card-item">Апартаменты</p>
           <span class="product-card-price">От 2000 ₽</span>
           <a href="#" class="product-card-button button">подробнее</a>
           <a href="#" class="product-card-button button">В избранном</a>
+          <img class="product-card-star" src="#" alt="рейтинг звездочки">
+          <p class="product-card-rating">Рейтинг: 9,2</p>
         </li>
         <li class="product-card">
+          <img src="" alt="гостиница GreenTree Inn" class="product-card-image">
           <a href="" class="product-card-link">
-            <img src="" alt="" class="product-card-image">
             <h3 class="product-card-title">GreenTree Inn</h3>
           </a>
           <p class="product-card-item">Гостиница</p>
           <span class="product-card-price">От 3000 ₽</span>
           <a href="#" class="product-card-button button">подробнее</a>
           <a href="#" class="product-card-button button">В избранное</a>
+          <img class="product-card-star" src="#" alt="рейтинг звездочки">
+          <p class="product-card-rating">Рейтинг: 9,2</p>
         </li>
-        <div>
-          <button class="product-show-more" type="button">Загрузить еще</button>
-        </div>
+        <li>
+          <a href="#" class="product-show-more">Загрузить еще</a>
+        </li>
       </ul>
-      <!--рейтинг звезд-  вариант_1      ---------------------------------------------------->
-      <div class="filter-star">
-        <img class="filter-star-item" src="#" alt="рейтинг звездочки">
-        <img class="filter-star-item" src="#" alt="рейтинг звездочки">
-        <img class="filter-star-item" src="#" alt="рейтинг звездочки">
-        <img class="filter-star-item" src="#" alt="рейтинг звездочки">
-        <p class="filter-star-rating">Рейтинг: 8,5</p>
-        <p class="filter-star-rating">Рейтинг: 8,9</p>
-        <p class="filter-star-rating">Рейтинг: 9,2</p>
-        <p class="filter-star-rating">Рейтинг: 9,2</p>
-      </div>
-      <!-- Форма для рейтинга звезд-    вариант_2     --------------------------------------------->
-      <!--<form class="filter-star" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="filter-star-group">
-          <legend>Рейтинг</legend>
-          <input type="text" name="star" class="filter-star-input" value="5" aria-label="5">
-          <input type="text" name="star" class="filter-star-input" value="4" aria-label="4">
-          <input type="text" name="star" class="filter-star-input" value="3" aria-label="3">
-          <input type="text" name="star" class="filter-star-input" value="2" aria-label="2">
-          <input type="text" name="star" class="filter-star-input" value="1" aria-label="1">
-        </fieldset>
-        <p class="filter-star-text"></p>
-      </form>
-      <!-------------------------------------------->
     <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -224,13 +209,13 @@
           <a class="pagination-link" href="#">10</a>
         </li>
     </ul>
-      <form class="page-number" action="">
+      <form class="page-number" action="https://echo.htmlacademy.ru/">
         <span class="page-number-hotel">Гостиниц на странице:</span>
         <select name="page" id="page" class="select-page">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
-          <option value="4"selected>4</option>
+          <option value="4" selected>4</option>
           <option value="5">5</option>
           <option value="6">6</option>
           <option value="7">7</option>
