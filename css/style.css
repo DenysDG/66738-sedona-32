@@ -2,14 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  src: url("fonts/pt-sans-regular.woff2") format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-weight: 700;
   font-display: swap;
 }
@@ -19,18 +19,18 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
-  color: black;
+  color: #000000;
 }
 
 .page-header {
   background-color: #FFFFFF;
-  color: black;
+  color: #000000;
 }
 
 .navigtion-link {
   font-size: 20px;
   line-height: 26px;
-  color: inherit;
+  color: #000000;
   text-align: center;
   text-decoration: none;
 }
@@ -38,7 +38,7 @@ body {
 .navigtion-user-link {
   font-size: 20px;
   line-height: 26px;
-  color: inherit;
+  color: #000000;
   text-align: center;
   text-decoration: none;
 }
@@ -51,14 +51,14 @@ body {
 
 .index-description {
   background-color: #FFFFFF;
-  color: black;
+  color: #000000;
   text-align: center;
 }
 
 .index-description-title{
   font-size: 30px;
   line-height: 36px;
-  color: inherit;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -66,7 +66,7 @@ body {
   font-size: 22px;
   line-height: 36px;
   color: #333333;
-  background-color: inherit;
+  background-color: #FFFFFF;
 }
 
 .interested {
@@ -77,8 +77,8 @@ body {
 .intrested-title {
   font-size: 30px;
   line-height: 36px;
-  color: black;
-  background-color: inherit;
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 .intrested-info {
@@ -107,7 +107,7 @@ body {
 
 .subscribe-catalog {
   text-align: center;
-  color: black;
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -115,24 +115,24 @@ body {
   font-size: 30px;
   line-height: 50px;
   text-transform: uppercase;
-  color: inherit;
+  color: #FFFFFF;
 }
 
 .subscribe-info {
   font-size: 22px;
   line-height: 26px;
-  color: inherit;
+  color: #FFFFFF;
 }
 
 .page-footer {
   background-color: #FFFFFF;
-  color: black;
+  color: #000000;
 }
 
 .footer-social-link {
   font-size: 18px;
   line-height: 21px;
-  color: inherit;
+  color: #000000;
   text-align: center;
   text-decoration: none;
 }
@@ -140,7 +140,7 @@ body {
 .footer-tel {
   font-size: 40px;
   line-height: 40px;
-  color: inherit;
+  color: #000000;
 }
 
 /* Секция преимуществ */
@@ -274,8 +274,8 @@ body {
 }
 
 .page-number-hotel {
-font-size: 18px;
-line-height: 23px;
-color: #333333;
-background-color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  background-color: #FFFFFF;
 }
