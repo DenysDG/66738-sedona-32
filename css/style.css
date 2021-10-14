@@ -233,6 +233,10 @@ body {
   align-items: center;
 }
 
+.footer-social-item {
+  list-style: none;
+}
+
 .footer-social-link {
   font-size: 18px;
   line-height: 21px;
