@@ -2,14 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  src: url("../fonts/ptsans-700.woff2") format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
@@ -17,8 +17,6 @@
 
 html {
   height: 100%;
-  outline: 5px solid red;
-  outline-offset: -5px;
 }
 
 body {
@@ -38,10 +36,24 @@ body {
   color: #000000;
 }
 
-.navigation {
+/* Навигация */
+
+.navigation-container {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 1200px;
+}
+
+.navigation-list {
+  width: 400px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-user {
+  max-width: 301px;
+  margin-left: auto;
 }
 
 .navigtion-link {
@@ -60,11 +72,32 @@ body {
   text-decoration: none;
 }
 
+.navigation-user-button {
+  width: 160px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756257;
+}
+
 .main-container {
   flex-grow: 1;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .main-index {
+  margin: 0 auto;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
 
@@ -86,8 +119,16 @@ body {
 .index-description-info {
   font-size: 22px;
   line-height: 36px;
+  font-weight: normal;
   color: #333333;
   background-color: #FFFFFF;
+}
+
+/* Заинтересовались? */
+
+.interested-container {
+  width: 720px;
+  margin: 0 auto;
 }
 
 .interested {
@@ -105,12 +146,15 @@ body {
 .intrested-info {
   font-size: 22px;
   line-height: 26px;
+  font-weight: normal;
   color: #333333;
+  text-align: center;
 }
 
 .intrested-link {
   font-size: 20px;
   line-height: 36px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756257;
@@ -118,12 +162,19 @@ body {
   text-decoration: none;
 }
 
+/* Подпишитесь на рассылку */
+
 .subscribe {
   text-align: center;
   color: #FFFFFF;
   background-image: url("../images/background-interested.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.subscribe-container {
+  width: 800px;
+  margin: 0 auto;
 }
 
 .subscribe-catalog {
@@ -134,7 +185,8 @@ body {
 
 .subscribe-title {
   font-size: 30px;
-  line-height: 50px;
+  line-height: 36px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -143,11 +195,37 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  font-weight: normal;
 }
+
+.subscribe-title-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.subscribe-info-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #333333;
+}
+
+/* Футер */
 
 .page-footer {
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.page-footer-container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-social-link {
@@ -158,22 +236,53 @@ body {
   text-decoration: none;
 }
 
+.footer-contacts {
+  width: 720px;
+  text-align: center;
+}
+
 .footer-tel {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+  text-decoration: none;
+}
+
+.footer-academy {
+  width: 115px;
 }
 
 /* Секция преимуществ */
 
-.advantages-list {
-  text-align: center;
+.advantages {
+  outline: 3px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -3px;
 }
 
-.advantages-title{
+.advanteges-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  list-style: none;
+}
+
+.advantages-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advanteges-item-user {
+  width: 400px;
+  height: 384px;
+  list-style: none;
 }
 
 .advantages-list-bg-blue {
@@ -185,11 +294,18 @@ body {
   background-color: #83B3D3;
 }
 
+.advantages-list-user {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages-list-user li:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list-user .advantages-description{
+.advantages-list-user .advantages-description {
   color: #333333;
 }
 
@@ -210,10 +326,10 @@ body {
   color: #FFFFFF;
 }
 
-
 .inner-header-title {
   font-size: 60px;
-  line-height: 70px;
+  line-height: 78px;
+  font-weight: bold;
   color: #FFFFFF;
 }
 
@@ -238,11 +354,18 @@ body {
 .search-hotels {
   font-size: 30px;
   line-height: 39px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-card-link {
+  text-decoration: none;
 }
 
 .product-card-title {
   font-size: 24px;
   line-height: 31px;
+  font-weight: bold;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -250,6 +373,7 @@ body {
 .product-card-button-brown {
   font-size: 16px;
   line-height: 21px;
+  font-weight: bold;
   color: #FFFFFF;
   background-color: #756257;
   border-radius: 4px;
@@ -260,6 +384,7 @@ body {
 .product-card-button-blue {
   font-size: 16px;
   line-height: 21px;
+  font-weight: bold;
   color: #FFFFFF;
   background-color: #83B3D3;
   border-radius: 4px;
@@ -270,6 +395,7 @@ body {
 .product-card-button-green {
   font-size: 16px;
   line-height: 21px;
+  font-weight: bold;
   color: #FFFFFF;
   background-color: #7DB54F;
   border-radius: 4px;
@@ -287,6 +413,7 @@ body {
 .product-show-more {
   font-size: 20px;
   line-height: 26px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;

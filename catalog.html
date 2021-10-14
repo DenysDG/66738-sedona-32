@@ -7,26 +7,28 @@
   </head>
 <body>
   <header class="page-header">
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigtion-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigtion-link" href="about.html">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigtion-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
-      <a class="header-logo" href="index.html"><img src="./images/logo-sedona.svg" width="138" height="70" alt="Лого седона"></a>
-    </nav>
-      <div class="navigation-user">
-        <a class="navigtion-user-link" href="#"><span class="visually-hidden">Поиск</span></a>
-        <a class="navigtion-user-link" href="#"><span class="visually-hidden"> Избранное</span></a>
-        <a class="navigtion-user-link" href="#">Хочу сюда!</a>
-      </div>
-  </header>
+    <div class="navigation-container">
+     <nav class="navigation">
+       <ul class="navigation-list">
+         <li class="navigation-item">
+           <a class="navigtion-link" href="about.html">Главная</a>
+         </li>
+         <li class="navigation-item">
+           <a class="navigtion-link" href="about.html">О Седоне</a>
+         </li>
+         <li class="navigation-item">
+           <a class="navigtion-link" href="catalog.html">Гостиницы</a>
+         </li>
+       </ul>
+     </nav>
+     <a class="header-logo" href="index.html"><img src="./images/logo-sedona.svg" width="138" height="70" alt="Лого седона"></a>
+       <div class="navigation-user">
+         <a class="navigtion-user-link" href="#"><span class="visually-hidden">Поиск</span></a>
+         <a class="navigtion-user-link" href="#"><span class="visually-hidden"> Избранное</span></a>
+         <a class="navigtion-user-link navigation-user-button" href="#">Хочу сюда!</a>
+       </div>
+     </div>
+   </header>
 <main class="main-container main-inner">
   <section class="catalog-container-bg">
   <header class="inner-header">
@@ -230,8 +232,8 @@
       </form>
    <!--   -->
   <section class="subscribe-catalog">
-    <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-    <p class="subscribe-info">Только полезная информация и никакого спама,
+    <h3 class="subscribe-title-catalog">Подпишитесь на рассылку</h3>
+    <p class="subscribe-info-catalog">Только полезная информация и никакого спама,
       честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" method="POST">
         <label class="visually-hidden" for="newsletter-email">Email</label>
@@ -241,6 +243,7 @@
   </section>
 </main>
 <footer class="page-footer">
+  <div class="page-footer-container">
   <section class="footer-social">
     <ul class="footer-list">
       <li class="footer-social-item">
@@ -266,6 +269,7 @@
   <section class="footer-academy">
     <a class="about-text" href="https://htmlacademy.ru/"> <img class="htmlacademy-link" src="./images/logo-footer.svg" width="115" height="34" alt="Лого html academy"></a>
   </section>
+</div>
 </footer>
 </body>
 </html>
