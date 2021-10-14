@@ -21,8 +21,6 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -38,27 +36,20 @@ body {
 
 /* Навигация */
 
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1200px;
-}
+
 
 .navigation-list {
-  width: 400px;
+
   padding: 0;
   margin: 0;
 }
 
-.navigation-user {
-  max-width: 301px;
-  margin-left: auto;
-}
+
 
 .navigtion-link {
   font-size: 20px;
   line-height: 26px;
+  font-weight: bold;
   color: #000000;
   text-align: center;
   text-decoration: none;
@@ -78,7 +69,7 @@ body {
 }
 
 .navigation-user-button {
-  width: 160px;
+
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -87,14 +78,8 @@ body {
   background-color: #756257;
 }
 
-.main-container {
-  flex-grow: 1;
-}
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
+
 
 .logo {
   display: block;
@@ -102,7 +87,7 @@ body {
 }
 
 .main-index {
-  margin: 0 auto;
+
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
 
@@ -131,10 +116,7 @@ body {
 
 /* Заинтересовались? */
 
-.interested-container {
-  width: 720px;
-  margin: 0 auto;
-}
+
 
 .interested {
   text-align: center;
@@ -177,10 +159,7 @@ body {
   background-size: cover;
 }
 
-.subscribe-container {
-  width: 800px;
-  margin: 0 auto;
-}
+
 
 .subscribe-catalog {
   text-align: center;
@@ -225,13 +204,7 @@ body {
   color: #000000;
 }
 
-.page-footer-container {
-  width: 1200px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .footer-social-item {
   list-style: none;
@@ -246,7 +219,7 @@ body {
 }
 
 .footer-contacts {
-  width: 720px;
+
   text-align: center;
 }
 
@@ -257,9 +230,7 @@ body {
   text-decoration: none;
 }
 
-.footer-academy {
-  width: 115px;
-}
+
 
 /* Секция преимуществ */
 
@@ -268,16 +239,12 @@ body {
   outline-offset: -3px;
 }
 
-.advanteges-item {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .advantages-list {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+
   text-align: center;
   list-style: none;
 }
@@ -289,8 +256,7 @@ body {
 }
 
 .advanteges-item-user {
-  width: 400px;
-  height: 384px;
+
   list-style: none;
 }
 
@@ -306,8 +272,7 @@ body {
 .advantages-list-user {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+
 }
 
 .advantages-list-user li:nth-child(2n+1) {
