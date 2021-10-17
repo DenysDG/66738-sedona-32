@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <div class="page_container">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -37,7 +38,7 @@
       <h1 class="visually-hiden">Sedona</h1>
       <img class="logo" src="./images/logo-index.svg" width="458" height="352" alt="Логотип Седона" >
       <div class="index-description">
-        <h2 class="index-description-title">Седона — небольшой городок в Аризоне,
+        <h2 class="index-description-title">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h2>
         <h3 class="index-description-info">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h3>
       </div>
@@ -68,11 +69,17 @@
                   </li>
                 </ul>
           </li>
+          <!-- Не могу разобраться как правильно с второй картинкой, и без класса "advanteges-item"
+             появляется пробел между каотинкой и блоками. Думаю что то не так -->
+                <li class="advanteges-item">
+                  <img class="advantages-photo" src="./images/advantages-photo-2.jpg" width="800" height="384" alt="Фото каньена">
+                </li>
                     <li class="advanteges-item-bg advanteges-item-user">
+                      <div class="advanteges-item-user">
                       <h3 class="advantages-title">Там есть мост дьявола</h3>
                         <p class="advantages-number">— №2 —</p>
                         <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                    <img class="advantages-photo" src="./images/advantages-photo-2.jpg" width="800" height="384" alt="Фото каньена">
+                      </div>
                   </li>
                   <li class="advantages-light-bg-blue advanteges-item-user">
                     <h3 class="advantages-title">Небольшая площадь</h3>
@@ -89,6 +96,7 @@
                       <p class="advantages-number">— №5 —</p>
                       <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
                   </li>
+
       </ul>
     </section>
     <section class="interested">
@@ -99,6 +107,7 @@
         <a class="intrested-link" href="#">поиск гостиницы в седоне</a>
     </section>
     <section class="subscribe">
+      <div class="subscribe_container">
       <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
       <p class="subscribe-info">Только полезная информация и никакого спама,
         честное бойскаутское!</p>
@@ -107,6 +116,7 @@
           <input type="email" name="email" placeholder="Ваш e-mail" id="newsletter-email">
           <button  type="submit" >Подписаться</button>
         </form>
+      </div>
     </section>
     </main>
     <footer class="page-footer">
@@ -136,5 +146,6 @@
         <a class="about-text" href="https://htmlacademy.ru/"> <img class="htmlacademy-link" src="./images/logo-footer.svg" width="115" height="34" alt="Лого html academy"></a>
       </section>
     </footer>
+  </div>
   </body>
 </html>
