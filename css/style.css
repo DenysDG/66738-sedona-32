@@ -166,11 +166,6 @@ body {
   background-size: cover;
 }
 
-.subscribe_container {
-  width: 800px;
-  margin: 0 auto;
-}
-
 .subscribe-catalog {
   text-align: center;
   color: #000000;
@@ -264,6 +259,15 @@ body {
   list-style: none;
 }
 
+.advantages-photo {
+  display: block;
+}
+
+.advantages-item-image {
+  width: 800px;
+  min-height: 384px;
+}
+
 .advanteges-item {
   display: flex;
   flex-wrap: wrap;
@@ -277,8 +281,7 @@ body {
 
 .advanteges-item-user {
   width: 400px;
-  height: 384px;
-  list-style: none;
+  min-height: 384px;
 }
 
 .advantages-list-bg-blue {
@@ -286,14 +289,20 @@ body {
 }
 
 .advanteges-item-bg {
+  display: flex;
+  flex-wrap: wrap;
   color: #FFFFFF;
   background-color: #83B3D3;
 }
 
 .advantages-list-user {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .advantages-list-user li:nth-child(2n+1) {
