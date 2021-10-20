@@ -327,6 +327,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 
@@ -364,8 +366,8 @@ body {
 
 .product-list-container {
   width: 1056px;
-  margin-left: 72px;
-  margin-right: 72px;
+  padding-left: 72px;
+  padding-right: 72px;
   display: flex;
   flex-direction: column;
   outline: 3px solid rgba(255, 99, 78, 0.5);
