@@ -39,7 +39,7 @@
   <header class="inner-header">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
+        <li class="breadcrumbs-item breadcrumbs-user">
           <a href="#" class="breadcrumbs-link"><span class="visually-hidden">Главная</span></a>
         </li>
         <li class="breadcrumbs-item">
@@ -126,10 +126,10 @@
     </div>
     </section>
   </section>
+  <div class="sorting-container">
       <div>
         <p class="search-hotels">Найдено гостиниц: 38</p>
      </div>
-    <div class="sorting-container">
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
           <select name="sorting" id="sorting" class="select-control">
@@ -139,15 +139,17 @@
           </select>
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
-      <a href="#" class="sorting-catalog-button">
-        <span class="visually-hidden">отобразить в виде карточек</span>
-      </a>
-      <a href="#" class="sorting-cards-button">
+      <div class="sorting-container">
+        <a href="#" class="sorting-catalog-button button">
+          <span class="visually-hidden">отобразить в виде карточек</span>
+        </a>
+         <a href="#" class="sorting-cards-button button">
         <span class="visually-hidden">отобразить в виде карточек с подробным описанием</span>
-      </a>
-      <a href="#" class="sorting-button">
+         </a>
+          <a href="#" class="sorting-button button">
         <span class="visually-hidden">отобразить в виде списка</span>
-      </a>
+          </a>
+        </div>
       </div>
     <div class="product-list-container">
       <ul class="product-list">

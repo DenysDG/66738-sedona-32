@@ -35,8 +35,10 @@
     </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hiden">Sedona</h1>
-      <img class="logo" src="./images/logo-index.svg" width="458" height="352" alt="Логотип Седона" >
+      <h1 class="visually-hidden">Sedona</h1>
+      <div class="logo-image">
+        <img class="logo" src="./images/logo-index.svg" width="458" height="352" alt="Логотип Седона" >
+      </div>
       <div class="index-description">
         <h2 class="index-description-title">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h2>
@@ -58,15 +60,15 @@
             </div>
                 <ul class="advantages-list-user">
                   <li class="advanteges-item-user">
-                    <h3 class="advantages-title">Жильё</h3>
+                    <h3 class="advantages-title advantages-subtitle">Жильё</h3>
                       <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                   </li>
                   <li class="advanteges-item-user">
-                    <h3 class="advantages-title">Еда</h3>
+                    <h3 class="advantages-title advantages-subtitle">Еда</h3>
                       <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                   </li>
                   <li class="advanteges-item-user">
-                    <h3 class="advantages-title">Сувениры</h3>
+                    <h3 class="advantages-title advantages-subtitle">Сувениры</h3>
                       <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
                   </li>
                 </ul>
@@ -110,7 +112,7 @@
       <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
       <p class="subscribe-info">Только полезная информация и никакого спама,
         честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="POST">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
           <label class="visually-hidden" for="newsletter-email">Email</label>
           <input type="email" name="email" placeholder="Ваш e-mail" id="newsletter-email">
           <button  type="submit" >Подписаться</button>
