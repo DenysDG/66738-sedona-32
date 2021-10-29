@@ -50,16 +50,15 @@ body {
   color: #000000;
 }
 
-/* Навигация - нужна помощь, не выходит сделать как по барбершопу, при любых указаний размеров для иконок все ломается
-вообщем я не понял как для иконок нужно праваильно делать... */
-
 .navigation {
+  padding: 0 72px;
   display: flex;
   justify-content: space-between;
 
 }
 
 .navigation-list {
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -67,15 +66,6 @@ body {
   list-style-type: none;
   align-items: center;
 }
-
-.navigation-list:first-child {
-  margin-left: 71px;
-}
-
-.navigation-list:last-child {
-  margin-right: 72px;
-}
-
 
 .navigtion-link {
   margin-right: 33px;
@@ -87,9 +77,17 @@ body {
   text-decoration: none;
 }
 
+.navigation-user {
+  width: 260px;
+}
+
 .navigation-user  .navigation-item {
   border: 1px solid #000000;
   margin-right: 23px;
+}
+
+.navigation-user  .navigation-item:last-child {
+  margin-right: 0;
 }
 
 .navigtion-user-link {
@@ -111,24 +109,16 @@ body {
   background-color: #756257;
 }
 
-.header-logo {
-  display: block;
-  box-sizing: border-box;
-}
-
 .logo {
   display: block;
   margin: 0 auto;
 }
 
 .logo-image {
-  margin-bottom: 146px;
-}
-
-.main-index {
+  height: 352px;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
-  min-height: 485px;
+  margin-bottom: 146px;
 }
 
 .index-description {
@@ -184,6 +174,8 @@ body {
 
 .intrested-link {
   display: block;
+  max-width: 575px;
+  margin: auto;
   margin-bottom: 91px;
   font-size: 20px;
   line-height: 36px;
@@ -198,6 +190,7 @@ body {
 /* Подпишитесь на рассылку */
 
 .subscribe {
+  padding-top: 94px;
   text-align: center;
   color: #FFFFFF;
   background-image: url("../images/background-interested.jpg");
@@ -212,7 +205,6 @@ body {
 }
 
 .subscribe-title {
-  padding-top: 94px;
   margin-bottom: 15px;
   font-size: 30px;
   line-height: 36px;
@@ -252,6 +244,7 @@ body {
 
 .page-footer {
   display: flex;
+  padding: 0 72px;
   min-height: 120px;
   align-items: center;
   justify-content: space-between;
@@ -267,6 +260,10 @@ body {
   list-style-type: none;
 }
 
+.footer-social {
+  width: 170px;
+}
+
 .footer-social-item {
   width: 20px;
   height: 16px;
@@ -274,14 +271,9 @@ body {
   border: 1px solid;
 }
 
-.footer-social-item:first-child {
-  margin-left: 72px;
-}
-
 .footer-social-item:last-child {
   margin-right: 0;
 }
-
 
 .footer-contacts {
   width: 720px;
@@ -297,7 +289,6 @@ body {
 
 .footer-academy {
   width: 115px;
-  margin-right: 72px;
 }
 
 /* Секция преимуществ */
@@ -329,9 +320,15 @@ body {
   flex-wrap: wrap;
 }
 
+.advanteges-item-user {
+
+}
+
+/* В блоке advantages-title лучше не задавать большое значение margin-top, 
+а отступ сформировать за счёт паддинга у родителя advanteges-item-user. 
+- Не понимаю как привильно сделать*/
+
 .advantages-title {
-  margin-top: 98px;
-  margin-bottom: 25px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -453,29 +450,36 @@ body {
 }
 
 .search-hotels {
-  margin-right: 192px;
-  padding-left: 71px;
+  width: 370px;
   font-size: 30px;
   line-height: 39px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.sorting-type {
-  margin-right: 81px;
-}
 
 .sorting-container {
+  padding: 0 72px;
   min-height: 48px;
   display: flex;
   margin-top: 0;
   margin-bottom: 42px;
-  padding: 0;
   color: #000000;
   background-color: #FFFFFF;
 }
 
-.sorting-container .button {
+.sorting-user-container {
+  width: 160px;
+  display: flex;
+
+}
+
+.sorting-type {
+  margin-left: auto;
+  margin-right: 81px;
+}
+
+.sorting-user-container .button {
   width: 48px;
   height: 48px;
   border: 1px solid #000000;
@@ -483,10 +487,6 @@ body {
 
 .sorting-container .button:not(:last-child) {
   margin-right: 8px;
-}
-
-.sorting-container .button:last-child {
-  margin-right: 72px;
 }
 
 .product-list-container {
@@ -593,12 +593,8 @@ body {
 .pagination {
   display: flex;
   margin-top: 61px;
-  padding: 0;
+  padding-left: 72px;
   list-style: none;
-}
-
-.pagination-item:first-child {
-  margin-left: 72px;
 }
 
 .pagination-item:not(:last-child) {
