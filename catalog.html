@@ -118,8 +118,8 @@
               <input type="number" class="catalog-filter-input" name="max-price">
             </label>
         </fieldset>
-       <div class="buttons">
-          <button type="submit">применить</button>
+       <div class="catalog-buttons">
+          <button class="catalog-button" type="submit">применить</button>
           <button type="reset">сбросить</button>
        </div>
       </form>
@@ -161,12 +161,14 @@
             </a>
             <p class="product-card-item">Гостиница</p>
             <span class="product-card-price">От 4000 ₽</span>
-            <a href="#" class="product-card-button-brown button">подробнее</a>
-            <a href="#" class="product-card-button-blue button">В избранное</a>
+            <div class="card-button-container">
+              <a href="#" class="product-card-button-brown button">подробнее</a>
+              <a href="#" class="product-card-button-blue button">В избранное</a>
+            </div>
           </div>
-        <div class="card-rating-wrapper">
-          <img class="product-card-star" src="#" alt="рейтинг звездочки">
-          <p class="product-card-rating">Рейтинг: 8,5</p>
+          <div class="card-rating-wrapper">
+            <img class="product-card-star" src="#" alt="рейтинг звездочки">
+            <p class="product-card-rating">Рейтинг: 8,5</p>
           </div>
         </li>
         <li class="product-card">
@@ -179,8 +181,10 @@
           </a>
           <p class="product-card-item">Мотель</p>
           <span class="product-card-price">От 3000 ₽</span>
-          <a href="#" class="product-card-button-brown button">подробнее</a>
-          <a href="#" class="product-card-button-blue button">В избранное</a>
+          <div class="card-button-container">
+            <a href="#" class="product-card-button-brown button">подробнее</a>
+            <a href="#" class="product-card-button-blue button">В избранное</a>
+          </div>
         </div>
         <div class="card-rating-wrapper">
           <img class="product-card-star" src="#" alt="рейтинг звездочки">
@@ -195,10 +199,14 @@
             <a href="" class="product-card-link">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
+            <div class="">
             <p class="product-card-item">Апартаменты</p>
             <span class="product-card-price">От 2000 ₽</span>
-            <a href="#" class="product-card-button-brown button">подробнее</a>
-            <a href="#" class="product-card-button-green button">В избранном</a>
+          </div>
+            <div class="card-button-container">
+              <a href="#" class="product-card-button-brown button">подробнее</a>
+              <a href="#" class="product-card-button-green button">В избранном</a>
+            </div>
           </div>
           <div class="card-rating-wrapper">
             <img class="product-card-star" src="#" alt="рейтинг звездочки">
@@ -215,8 +223,10 @@
             </a>
             <p class="product-card-item">Гостиница</p>
             <span class="product-card-price">От 3000 ₽</span>
-            <a href="#" class="product-card-button-brown button">подробнее</a>
-            <a href="#" class="product-card-button-blue button">В избранное</a>
+            <div class="card-button-container">
+              <a href="#" class="product-card-button-brown button">подробнее</a>
+              <a href="#" class="product-card-button-blue button">В избранное</a>
+            </div>
           </div>
           <div class="card-rating-wrapper">
             <img class="product-card-star" src="#" alt="рейтинг звездочки">
@@ -228,6 +238,7 @@
         <a href="#" class="product-show-more">Загрузить еще</a>
       </div>
     </div>
+    <div class="pagination-wrapper">
     <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -263,11 +274,12 @@
           <option value="10">10</option>
         </select>
       </form>
+    </div>
   <section class="subscribe-catalog">
     <h3 class="subscribe-title-catalog">Подпишитесь на рассылку</h3>
     <p class="subscribe-info-catalog">Только полезная информация и никакого спама,
       честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/" method="POST">
+      <form class="subscribe-catalog-form" action="https://echo.htmlacademy.ru/" method="POST">
         <label class="visually-hidden" for="newsletter-email">Email</label>
         <input type="email" name="email" placeholder="Ваш e-mail" id="newsletter-email">
         <button  type="submit" >Подписаться</button>

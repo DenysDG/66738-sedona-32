@@ -320,12 +320,9 @@ body {
   flex-wrap: wrap;
 }
 
-.advanteges-item-user {
 
-}
-
-/* В блоке advantages-title лучше не задавать большое значение margin-top, 
-а отступ сформировать за счёт паддинга у родителя advanteges-item-user. 
+/* В блоке advantages-title лучше не задавать большое значение margin-top,
+а отступ сформировать за счёт паддинга у родителя advanteges-item-user.
 - Не понимаю как привильно сделать*/
 
 .advantages-title {
@@ -406,8 +403,49 @@ body {
   color: #FFFFFF;
   padding-left: 72px;
   padding-right: 72px;
+  padding-bottom: 82px;
 }
 
+.catalog-filter {
+  display: flex;
+  margin: 0  auto;
+  justify-content: space-between;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-filter-title {
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.catalog-filter-item:not(:last-child) {
+  padding-bottom: 13px;
+}
+
+.catalog-button {
+  display: block;
+  width: 160PX;
+  height: 48px;
+  font-weight: bold;
+  background: #83B3D3;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.control-input {
+  margin-right: 19px;
+  margin-left: 0;
+}
 
 .inner-header-title {
   margin-top: 0;
@@ -433,16 +471,6 @@ body {
   text-decoration: none;
 }
 
-.catalog-filter-list {
-  list-style: none;
-}
-
-.catalog-filter-title {
-  font-size: 20px;
-  line-height: 26px;
-  color: #FFFFFF;
-}
-
 .control-label {
   font-size: 18px;
   line-height: 23px;
@@ -462,10 +490,12 @@ body {
   padding: 0 72px;
   min-height: 48px;
   display: flex;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 42px;
   color: #000000;
   background-color: #FFFFFF;
+
 }
 
 .sorting-user-container {
@@ -492,6 +522,7 @@ body {
 .product-list-container {
   padding-left: 72px;
   padding-right: 72px;
+  margin-bottom: 61px;
   outline: 3px solid rgba(255, 99, 78, 0.5);
   outline-offset: -3px;
 }
@@ -502,13 +533,17 @@ body {
   list-style: none;
 }
 
+/*
 .product-card {
   display: flex;
   justify-content: space-between;
 }
+*/
 
-.product-card-link {
-  text-decoration: none;
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-bottom: 61px;
 }
 
 .product-image-wrapper {
@@ -521,11 +556,22 @@ body {
 }
 
 .product-card-title {
+  margin: 0;
   font-size: 24px;
   line-height: 31px;
   font-weight: bold;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.product-card-item {
+  display: inline;
+  margin: 0;
+  margin-right: 78px;
+}
+
+.card-button-container {
+  margin-top: 31px;
 }
 
 .product-card-button-brown {
@@ -569,6 +615,10 @@ body {
 }
 
 .product-show-more {
+  display: block;
+  max-width: 652px;
+  padding: 15px;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
@@ -577,6 +627,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
+  border-radius: 4px;
 }
 
 .page-number-hotel {
@@ -586,15 +637,20 @@ body {
   background-color: #FFFFFF;
 }
 
-.catalog-filter {
-  display: flex;
-}
-
 .pagination {
   display: flex;
-  margin-top: 61px;
-  padding-left: 72px;
   list-style: none;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 72px;
+}
+
+.page-number-hotel {
+ margin-right: 51px;
 }
 
 .pagination-item:not(:last-child) {
@@ -604,6 +660,7 @@ body {
 .pagination-link {
   display: block;
   box-sizing: border-box;
+  padding: 13px;
   width: 55px;
   height: 55px;
   font-size: 20px;
