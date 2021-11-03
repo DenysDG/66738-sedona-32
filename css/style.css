@@ -432,7 +432,7 @@ body {
 
 .catalog-button {
   display: block;
-  width: 160PX;
+  width: 160px;
   height: 48px;
   font-weight: bold;
   background: #83B3D3;
@@ -533,16 +533,13 @@ body {
   list-style: none;
 }
 
-/*
-.product-card {
-  display: flex;
-  justify-content: space-between;
+.product-card-wrapper {
+  padding: 0 37px;
 }
-*/
 
 .product-card {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 180px 1fr 160px;
   margin-bottom: 61px;
 }
 
@@ -565,7 +562,6 @@ body {
 }
 
 .product-card-item {
-  display: inline;
   margin: 0;
   margin-right: 78px;
 }
@@ -645,7 +641,7 @@ body {
 .pagination-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 0 72px;
 }
 
