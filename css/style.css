@@ -57,38 +57,31 @@ body {
   justify-content: space-between;
 }
 
-.header-logo {
-  position: relative;
-  width: 138px;
-  height: 70px;
-  right: 45px;
+.navigtion-link-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 21px;
 }
 
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #000000;
-}
-
-.navigtion-link:hover .navigation-icon {
+.navigation-icon:hover {
   fill: #756257;
 }
 
-.navigtion-link:focus-visible .navigation-icon {
+ /* так и не понял, как сделать фокус, иконки не поддаются, а где текст пробовал через паддинги - не то,
+ а если задавать размеры то ломается верстка, покажите пожалуйста как его таки сделать?*/
+
+.navigation-icon:focus-visible {
   box-shadow:  0 0 0 4px #68A2CA;
   outline: none;
   border-radius: 4px;
 }
 
-.navigtion-link:active .navigation-icon {
-  fill: #756257;
+.navigation-icon:active {
   opacity: 0.3;
 }
-
 
 .navigation-list {
   width: 350px;
@@ -100,7 +93,10 @@ body {
   align-items: center;
 }
 
+/*  похожая ситуация, выставляю размеры и у меня линия снизу, под ширину блока стает и ломается блок */
+
 .navigtion-link {
+  display: block;
   position: relative;
   margin-right: 33px;
   font-size: 20px;
@@ -111,14 +107,36 @@ body {
   text-decoration: none;
 }
 
+.navigtion-link-round {
+  position: relative;
+  z-index: 5;
+  margin-right: 33px;
+}
+
+.round-green {
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  width: 19px;
+  height: 19px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 50%;
+  background-color: #7DB550;
+  z-index: 10;
+}
+
 .navigtion-link:hover {
   color: #756257;
 }
 
 .navigtion-link:focus-visible {
-  box-shadow:  0 0 0 4px #68A2CA;
+  box-shadow: inset 0 0 0 4px #68A2CA;
   outline: none;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .navigtion-link:active {
@@ -136,7 +154,7 @@ body {
 }
 
 .navigation-user {
-  width: 260px;
+  width: 350px;
   justify-content: flex-end;
 }
 
@@ -149,6 +167,8 @@ body {
   line-height: 21px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
   color: #FFFFFF;
   background-color: #756257;
   border-radius: 4px;
@@ -165,7 +185,6 @@ body {
   border-radius: 5px;
 }
 
- /* не получается отдельно прописать состояние active кнопке */
 .navigation-user-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -358,8 +377,39 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #FFFFFF;
+  align-items: center;
   color: #000000;
 
+}
+
+.footer-social {
+  width: 170px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.footer-icon {
+  fill: #83B3D3;
+}
+
+.footer-icon:hover {
+  fill: #68A2CA;
+}
+
+.footer-icon:focus-visible {
+  box-shadow:  0 0 0 4px #68A2CA;
+  outline: none;
+  border-radius: 4px;
+}
+
+.footer-icon:active {
+  opacity: 0.3;
 }
 
 .footer-list {
@@ -367,10 +417,6 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.footer-social {
-  width: 170px;
 }
 
 .footer-social-item {
@@ -383,12 +429,29 @@ body {
   margin-right: 0;
 }
 
-.footer-contacts {
-  width: 720px;
-  text-align: center;
+.footer-icon {
+  fill: #83B3D3;
+}
+
+.footer-icon:hover {
+  fill: #68A2CA;
+}
+
+.footer-icon:focus-visible {
+  box-shadow:  0 0 0 4px #68A2CA;
+  outline: none;
+}
+
+.footer-icon:active {
+  opacity: 0.3;
 }
 
 .footer-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 50px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -413,17 +476,25 @@ body {
   width: 115px;
 }
 
-.footer-academy:hover {
+.about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 54px;
+}
+
+.about-text:hover {
   color: #756257;
 }
  /* не применяются свойства на иконки, не могу найти почему так? */
-.footer-academy:focus{
+.about-text:focus{
   box-shadow:  0 0 0 3px #68A2CA;
   outline: none;
   border-radius: 4px;
 }
 
-.footer-academy:active {
+.about-text:active {
   opacity: 0.3;
 }
 
@@ -469,9 +540,25 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.advantages-icon {
-  margin-top: 91px;
 
+
+
+.advantages-icon-home {
+  background-image: url("../images/advantages-icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-icon-food {
+  background-image: url("../images/advantages-icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-icon-box {
+  background-image: url("../images/advantages-icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages-title {
@@ -482,8 +569,12 @@ body {
 }
 
 .advantages-subtitle {
-  margin-top: 23px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
   margin-bottom: 20px;
+  padding-top: 184px;
 
 }
 
