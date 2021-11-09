@@ -58,12 +58,11 @@ body {
 }
 
 .navigtion-link-icon {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 21px;
 }
 
 .navigation-icon:hover {
@@ -84,7 +83,7 @@ body {
 }
 
 .navigation-list {
-  width: 350px;
+  width: 410px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -96,9 +95,12 @@ body {
 /*  похожая ситуация, выставляю размеры и у меня линия снизу, под ширину блока стает и ломается блок */
 
 .navigtion-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
   position: relative;
-  margin-right: 33px;
+  margin-right: 23px;
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
@@ -115,8 +117,8 @@ body {
 
 .round-green {
   position: absolute;
-  top: -3px;
-  right: -7px;
+  top: -2px;
+  right: -4px;
   width: 19px;
   height: 19px;
   font-weight: normal;
@@ -146,16 +148,26 @@ body {
 .navigtion-link-current::after {
   position: absolute;
   right: 0;
-  top: 47px;
+  top: 49px;
   left: 0;
   height: 2px;
   background-color: #756257;
   content: "";
 }
 
+.header-logo {
+  margin-bottom: -10px;
+}
+
 .navigation-user {
-  width: 350px;
+  width: 400px;
   justify-content: flex-end;
+}
+
+.navigtion-link-icon:focus-visible {
+  box-shadow: inset 0 0 0 4px #68A2CA;
+  outline: none;
+  border-radius: 10px;
 }
 
 .navigation-user-button {
@@ -192,15 +204,15 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 46px;
 }
 
 .logo-image {
-  height: 352px;
-  background-image: url("../images/index-background.jpg");
+  height: 485px;
+  background-image: url("../images/index-divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
-  margin-bottom: 146px;
-  padding-top: 51px;
-  padding-bottom: 83px;
+  margin-bottom: 63px;
+  background-position: bottom;
 }
 
 .index-description {
@@ -402,12 +414,6 @@ body {
   fill: #68A2CA;
 }
 
-.footer-icon:focus-visible {
-  box-shadow:  0 0 0 4px #68A2CA;
-  outline: none;
-  border-radius: 4px;
-}
-
 .footer-icon:active {
   opacity: 0.3;
 }
@@ -437,9 +443,10 @@ body {
   fill: #68A2CA;
 }
 
-.footer-icon:focus-visible {
+.footer-social-link:focus-visible {
   box-shadow:  0 0 0 4px #68A2CA;
   outline: none;
+  border-radius: 4px;
 }
 
 .footer-icon:active {
@@ -461,7 +468,7 @@ body {
 .footer-tel:hover {
   color: #756257;
 }
- /*  */
+
 .footer-tel:focus-visible {
   box-shadow:  0 0 0 3px #68A2CA;
   outline: none;
@@ -487,8 +494,8 @@ body {
 .about-text:hover {
   color: #756257;
 }
- /* не применяются свойства на иконки, не могу найти почему так? */
-.about-text:focus{
+
+.about-text:focus-visible {
   box-shadow:  0 0 0 3px #68A2CA;
   outline: none;
   border-radius: 4px;
@@ -687,6 +694,51 @@ body {
   cursor: pointer;
 }
 
+.catalog-button:hover {
+  background-color: #68A2CA;
+  color: #FFFFFF;
+}
+
+.catalog-button:focus-visible {
+  box-shadow: 0 0 0 3px #FFFFFF;
+  outline: none;
+  border-radius: 4px;
+}
+
+.catalog-button:active {
+  opacity: 0.6;
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-buttons {
+  text-align: center;
+}
+
+
+.catalog-button-reset {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  padding: 2px 5px;
+}
+
+.catalog-button-reset:hover {
+  opacity: 0.6;
+}
+
+.catalog-button-reset:focus-visible {
+  box-shadow: 0 0 0 3px #68A2CA;
+  outline: none;
+  border-radius: 4px;
+}
+
+.catalog-button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .control-input {
   margin-right: 19px;
@@ -705,24 +757,30 @@ body {
 .breadcrumbs {
   width: 130px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 45px;
   padding: 0;
-  justify-content: flex-end;
 }
 
 .breadcrumbs-icon-arrow {
   color: #FFFFFF;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) scale(0.7);
+  opacity: 0.6;
 }
 
-.breadcrumbs-user {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+.breadcrumbs-icon-arrow:hover {
+  opacity: 0;
 }
 
+.breadcrumbs-user .breadcrumbs-link {
+  display: flex;
+  padding: 4px 6px;
+  justify-content: center;
+  align-items: center;
+}
 
 .breadcrumbs-link {
   display: block;
@@ -730,6 +788,25 @@ body {
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
+  padding: 2px 5px;
+}
+
+.breadcrumbs-icon {
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus-visible {
+  box-shadow:  0 0 0 3px #68A2CA;
+  outline: none;
+  border-radius: 3px;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .control-label {
@@ -763,7 +840,6 @@ body {
 .sorting-user-container {
   width: 160px;
   display: flex;
-
 }
 
 .sorting-type {
@@ -771,20 +847,10 @@ body {
   margin-right: 81px;
 }
 
-.sorting-catalog-button {
-  position: relative;
-  display: inline-block;
-  margin-right: 8px;
-  width: 48px;
-  height: 48px;
-  border: 2px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.sorting-cards-button {
-  position: relative;
-  display: inline-block;
+.sorting-user-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 8px;
   width: 48px;
   height: 48px;
@@ -794,8 +860,6 @@ body {
 }
 
 .sorting-button {
-  position: relative;
-  display: inline-block;
   width: 48px;
   height: 48px;
   border: 2px solid #000000;
@@ -803,14 +867,6 @@ body {
   border-radius: 4px;
 }
 
-.sorting-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
 
 /*  product-list  */
 
@@ -845,6 +901,19 @@ body {
   min-height: 120px;
 }
 
+.product-image-wrapper:hover {
+  opacity: 0.6;
+}
+
+.product-image-wrapper:focus-visible {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.product-image-wrapper:active {
+  opacity: 0.3;
+}
+
 .product-card-title {
   margin: 0;
   font-size: 24px;
@@ -852,7 +921,30 @@ body {
   font-weight: bold;
   color: #000000;
   background-color: #FFFFFF;
+}
 
+.product-card-link {
+  display: flex;
+  max-width: 220px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-card-title:hover {
+  color: #756257;
+}
+
+/* подскажите как сделать фокус, чтоб разметку не ломать,
+ не выходит текс по средине установить чтоб оно ровно все осталось */
+
+.product-card-link:focus-visible {
+  box-shadow:  0 0 0 3px #68A2CA;
+  outline: none;
+  border-radius: 3px;
+}
+
+.product-card-link:active {
+  opacity: 0.3;
 }
 
 .product-card-item {
@@ -884,6 +976,21 @@ body {
   padding: 5px 0;
 }
 
+.product-card-button-brown:hover {
+  background-color: #615048;
+  color: #ffffff;
+}
+
+.product-card-button-brown:focus-visible {
+  box-shadow:  0 0 0 3px #68A2CA;
+  outline: none;
+  border-radius: 4px;
+}
+
+.product-card-button-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .product-card-button-blue {
   width: 160px;
   font-size: 16px;
@@ -897,7 +1004,23 @@ body {
   border: none;
   padding: 5px 0;
   cursor: pointer;
+}
 
+.product-card-button-blue:hover {
+  background-color: #68A2CA;
+  color: #FFFFFF;
+  box-shadow:  0 0 0 1px #756257;
+}
+
+.product-card-button-blue:focus-visible {
+  box-shadow:  0 0 0 4px #756257;
+  outline: none;
+  border-radius: 4px;
+}
+
+.product-card-button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow:  0 0 0 1px #756257;
 }
 
 .product-card-button-green {
@@ -915,6 +1038,23 @@ body {
   cursor: pointer;
 }
 
+.product-card-button-green:hover {
+  background-color: #6C9E42;
+  color: #FFFFFF;
+}
+
+.product-card-button-green:focus-visible {
+  box-shadow:  0 0 0 4px #756257;
+  outline: none;
+  border-radius: 4px;
+}
+
+.product-card-button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Блок с рейтингом, звездочки */
+
 .product-card-rating {
   margin: 0;
   font-size: 16px;
@@ -923,9 +1063,44 @@ body {
   background-color: #F2F2F2;
 }
 
-.product-card-star {
+.stars-rating-2::before {
+  display: inline-block;
+  background-image: url("../images/star-rating-blue.svg");
+  background-repeat: space repeat;
+  content: "";
+  width: 45px;
+  height: 17px;
   margin-bottom: 63px;
-  margin-right: 7px;
+}
+
+.stars-rating-3::before {
+  display: inline-block;
+  background-image: url("../images/star-rating-blue.svg");
+  background-repeat: space repeat;
+  content: "";
+  width: 65px;
+  height: 17px;
+  margin-bottom: 63px;
+
+}
+
+.stars-rating-4::before {
+  display: inline-block;
+  background-image: url("../images/star-rating-blue.svg");
+  background-repeat: space repeat;
+  content: "";
+  width: 88px;
+  height: 17px;
+  margin-bottom: 63px;
+
+}
+
+.card-rating-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .product-show-more {
@@ -984,6 +1159,21 @@ body {
   background-color: #83B3D3;
   text-decoration: none;
   text-align: center;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+  color: #FFFFFF;
+}
+
+.pagination-link:focus-visible {
+  box-shadow:  0 0 0 3px #756257;
+  outline: none;
+  border-radius: 4px;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-item .pagination-current {
