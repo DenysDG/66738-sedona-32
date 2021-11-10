@@ -95,9 +95,7 @@ body {
 /*  похожая ситуация, выставляю размеры и у меня линия снизу, под ширину блока стает и ломается блок */
 
 .navigtion-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding: 5px 10px;
   position: relative;
   margin-right: 23px;
@@ -706,7 +704,6 @@ body {
 }
 
 .catalog-button:active {
-  opacity: 0.6;
   background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -727,7 +724,7 @@ body {
 }
 
 .catalog-button-reset:hover {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6)
 }
 
 .catalog-button-reset:focus-visible {
@@ -737,7 +734,7 @@ body {
 }
 
 .catalog-button-reset:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
 .control-input {
@@ -758,28 +755,10 @@ body {
   width: 130px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 45px;
   padding: 0;
-}
-
-.breadcrumbs-icon-arrow {
-  color: #FFFFFF;
-  transform: rotate(-90deg) scale(0.7);
-  opacity: 0.6;
-}
-
-.breadcrumbs-icon-arrow:hover {
-  opacity: 0;
-}
-
-.breadcrumbs-user .breadcrumbs-link {
-  display: flex;
-  padding: 4px 6px;
-  justify-content: center;
-  align-items: center;
 }
 
 .breadcrumbs-link {
@@ -789,10 +768,24 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   padding: 2px 5px;
+  margin-right: 10px;
 }
 
 .breadcrumbs-icon {
   fill: #FFFFFF;
+}
+
+.breadcrumbs-arrow::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg) scale(0.5);
+  opacity: 0.6;
+  margin-right: 10px;
 }
 
 .breadcrumbs-link:hover {
@@ -892,11 +885,8 @@ body {
   margin-bottom: 61px;
 }
 
-.product-image-wrapper {
-  display: block;
-}
-
 .product-card-image {
+  display: block;
   width: 180px;
   min-height: 120px;
 }
@@ -923,24 +913,14 @@ body {
   background-color: #FFFFFF;
 }
 
-.product-card-link {
-  display: flex;
-  max-width: 220px;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .product-card-title:hover {
   color: #756257;
 }
 
-/* подскажите как сделать фокус, чтоб разметку не ломать,
- не выходит текс по средине установить чтоб оно ровно все осталось */
-
 .product-card-link:focus-visible {
-  box-shadow:  0 0 0 3px #68A2CA;
-  outline: none;
-  border-radius: 3px;
+  outline: 3px solid #68a2ca;
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .product-card-link:active {
@@ -956,8 +936,8 @@ body {
   margin-top: 31px;
 }
 
-  /*  не совсем понятно надо ли заголовок h3 оборачивать в тег а..  */
 .product-card-link {
+  display: block;
   text-decoration: none;
 }
 
