@@ -918,6 +918,7 @@ body {
 }
 
 .product-card-link:focus-visible {
+  width: fit-content;
   outline: 3px solid #68a2ca;
   outline-offset: 4px;
   border-radius: 4px;
