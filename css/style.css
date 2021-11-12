@@ -1492,7 +1492,7 @@ body {
   height: 100%;
 }
 
-.pupover-title {
+.popover-title {
   margin: 0;
   font-weight: bold;
   font-size: 18px;
@@ -1500,7 +1500,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.pupover-item {
+.popover-item {
   margin: 0;
   font-weight: normal;
   font-size: 16px;
@@ -1508,7 +1508,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.pupover-button {
+.popover-button {
   margin-left: auto;
   width: 20px;
   height: 20px;
@@ -1518,24 +1518,24 @@ body {
   opacity: 0.2;
 }
 
-.pupover-image {
+.popover-image {
   display: block;
   width: 48px;
   height: 48px;
   margin: 0 17px 25px 25px;
 }
 
-.pupover-list {
+.popover-list {
   list-style-type: none;
   margin: 0;
   padding: 25px 25px 0 0;
 }
 
-.pupover-card {
+.popover-card {
   display: flex;
 }
 
-.popover-cart .pupover-show-button {
+.popover-show-button {
   display: block;
   box-sizing: border-box;
   width: 100%;
