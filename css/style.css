@@ -70,9 +70,6 @@ body {
   fill: #756257;
 }
 
-/*так и не понял, как сделать фокус, иконки не поддаются, а где текст пробовал через паддинги - не то,
- а если задавать размеры то ломается верстка, покажите пожалуйста как его таки сделать? */
-
 .navigation-icon:focus-visible {
   box-shadow: 0 0 0 4px #68a2ca;
   outline: none;
@@ -310,9 +307,13 @@ body {
 }
 
 .subscribe-field {
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
   width: 554px;
   margin: 0;
-  padding: 22px 24px;
+  padding: 17px 24px;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
   border: none;
@@ -591,12 +592,22 @@ body {
 .advantages-number {
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
+  padding-top: 4px;
+  color: #333333;
+}
+
+.advantages-number-white {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
 }
 
 .advanteges-item-user {
   width: 400px;
-  min-height: 384px;
+  min-height: 379px;
+  padding-bottom: 5px;
 }
 
 .advantages-list-bg-blue {
@@ -634,22 +645,26 @@ body {
   min-height: 73px;
   max-width: 180px;
   margin: auto;
+  color: #333333;
 }
 
 .advantages-description-food {
   min-height: 73px;
   max-width: 240px;
   margin: auto;
+  color: #333333;
 }
 
 .advantages-description-box {
   min-height: 73px;
   max-width: 240px;
   margin: auto;
+  color: #333333;
 }
 
 .advantages-description-user {
   width: 250px;
+  color: #333333;
 }
 
 
@@ -674,7 +689,7 @@ body {
   padding-top: 35px;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #ffffff;
   padding-left: 72px;
   padding-right: 72px;
@@ -684,7 +699,6 @@ body {
 .catalog-filter {
   display: flex;
   margin: 0  auto;
-  justify-content: space-between;
 }
 
 .catalog-filter-list {
@@ -709,6 +723,8 @@ body {
 
 .catalog-button {
   display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
   padding: 0;
   width: 160px;
   height: 48px;
@@ -829,11 +845,13 @@ body {
 
 .catalog-filter-input {
   width: 103px;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 17px;
   padding-right: 20px;
-  font: inherit;
   background-color: transparent;
   color: #ffffff;
   border: 2px solid #ffffff;
@@ -874,8 +892,17 @@ body {
 .catalog-filter-group {
   margin: 0;
   margin-bottom: 40px;
+  margin-right: 65px;
   padding: 0;
   border: none;
+}
+
+.catalog-filter-hotel {
+  margin-right: 172px;
+}
+
+.catalog-filter-range {
+  margin-right: 82px;
 }
 
 /* чек-боксы */
@@ -992,7 +1019,7 @@ body {
 
 .inner-header-title {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-size: 60px;
   line-height: 78px;
   font-weight: bold;
@@ -1004,7 +1031,7 @@ body {
   display: flex;
   align-items: center;
   list-style-type: none;
-  margin-top: 0;
+  margin-top: -15px;
   margin-bottom: 45px;
   padding: 0;
 }
@@ -1015,8 +1042,8 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
-  padding: 2px 5px;
-  margin-right: 10px;
+  padding: 5px 0;
+  margin-right: 5px;
 }
 
 .breadcrumbs-icon {
@@ -1185,6 +1212,8 @@ body {
 .product-card-item {
   margin: 0;
   margin-right: 78px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .card-button-container {
@@ -1197,6 +1226,7 @@ body {
 }
 
 .product-card-button-brown {
+  font-family: "PT Sans", sans-serif;
   display: inline-block;
   text-align: center;
   width: 160px;
@@ -1227,6 +1257,7 @@ body {
 }
 
 .product-card-button-blue {
+  font-family: "PT Sans", sans-serif;
   width: 160px;
   font-size: 16px;
   line-height: 21px;
@@ -1259,6 +1290,7 @@ body {
 }
 
 .product-card-button-green {
+  font-family: "PT Sans", sans-serif;
   width: 160px;
   font-size: 16px;
   line-height: 21px;
@@ -1528,7 +1560,6 @@ body {
   width: 20px;
   height: 20px;
   background: transparent;
-  background-color: #000000;
   border: none;
   opacity: 0.2;
 }
@@ -1568,6 +1599,8 @@ body {
   padding: 20px;
   background-color: #756257;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
@@ -1607,6 +1640,9 @@ body {
 }
 
 .modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin: auto;
   padding: 70px;
@@ -1616,14 +1652,15 @@ body {
 }
 
 .modal-auth {
-  width: 605px;
+  width: 576px;
+  height: 421px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 64px;
-  right: 75px;
+  top: 58px;
+  right: 71px;
   width: 53px;
   height: 53px;
   background-color: #f2f2f2;
@@ -1649,7 +1686,9 @@ body {
 
 
 .modal-title {
-  margin: 0;
+  position: relative;
+  bottom: 26px;
+  right: 4px;
   font-family: "PT Sans", sans-serif;
   margin-bottom: 32px;
   font-size: 30px;
@@ -1666,7 +1705,6 @@ body {
   line-height: 40px;
   color: #000000;
   font-weight: bold;
-  margin-bottom: 40px;
 }
 
 .auth-form-field {
@@ -1674,7 +1712,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  width: 420px;
+  width: 397px;
   height: 50px;
   padding-left: 19px;
   background: #f2f2f2;
@@ -1696,18 +1734,22 @@ body {
 
 .field-group {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .field-group-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .date-arrival-button {
   position: absolute;
   content: "";
-  top: 20px;
-  right: 25px;
+  top: 21px;
+  right: 18px;
   background-image: url("../images/date.svg");
   width: 15px;
   height: 15px;
@@ -1717,8 +1759,8 @@ body {
 .date-departure-button {
   position: absolute;
   content: "";
-  top: 20px;
-  right: 25px;
+  top: 19px;
+  right: 18px;
   background-image: url("../images/date.svg");
   width: 15px;
   height: 15px;
@@ -1734,17 +1776,17 @@ body {
   color: #000000;
   text-align: center;
   padding: 0;
-  margin-right: 56px;
+  margin-right: 47px;
 }
 
 .modal-plus-adults {
   position: absolute;
   background-image: url("../images/plus.svg");
   width: 13px;
-  height: 13px;
+  height: 10px;
   z-index: 1;
   top: 18px;
-  right: 75px;
+  right: 69px;
   border: none;
 }
 
@@ -1752,10 +1794,9 @@ body {
   position: absolute;
   background-image: url("../images/minus.svg");
   width: 13px;
-  height: 1px;
   z-index: 1;
   top: 24px;
-  right: 157px;
+  right: 151px;
   border: none;
 }
 
@@ -1813,8 +1854,8 @@ body {
 .modal-button {
   display: block;
   text-align: center;
-  width: 575px;
-  padding: 15px;
+  width: 552px;
+  padding: 10px;
   font-weight: bold;
   font-size: 20px;
   line-height: 40px;
@@ -1843,23 +1884,21 @@ body {
 
 .date-description {
   display: block;
-  padding-left: 160px;
-  margin-top: -35px;
+  padding-left: 154px;
   margin-bottom: 10px;
+  line-height: 29px;
   color: #ff5757;
   font-size: 16px;
-  line-height: 40px;
   font-weight: normal;
 }
 
 .date-description-departure {
   display: block;
-  padding-left: 160px;
-  margin-top: -35px;
+  padding-left: 154px;
+  line-height: 30px;
   margin-bottom: 10px;
   color: #333333;
   font-size: 16px;
-  line-height: 40px;
   font-weight: normal;
 }
 
@@ -1878,14 +1917,14 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  width: 213px;
-  min-height: 100px;
-  top: 40px;
-  left: -120px;
+  width: 215px;
+  min-height: 107px;
+  top: 41px;
+  left: -115px;
   background-color: #333333;
   color: #ffffff;
   text-align: left;
-  padding: 15px 18px 18px 22px;
+  padding: 19px 18px 18px 22px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
@@ -1894,7 +1933,7 @@ body {
   content: " ";
   position: absolute;
   bottom: 100%;
-  left: 133px;
+  left: 127px;
   margin-left: -9px;
   border-width: 9px;
   border-style: solid;
