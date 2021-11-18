@@ -448,10 +448,6 @@ body {
 .footer-icon {
   fill: #83b3d3;
   position: absolute;
-  top: -5px;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .footer-icon:hover {
