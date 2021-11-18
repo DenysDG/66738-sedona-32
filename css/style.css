@@ -849,6 +849,7 @@ body {
 }
 
 .range-wrapper-inputs {
+  position: relative;
   justify-content: center;
   margin-bottom: 29px;
 }
@@ -868,6 +869,33 @@ body {
   border-radius: 4px 0 0 4px;
   appearance: textfield;
   z-index: 5;
+}
+
+
+.filter-label {
+  position: absolute;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  right: 158px;
+  top: 12px;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.filter-label-2 {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 .catalog-filter-input-2 {
