@@ -6,29 +6,29 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
 <body>
-  <div class="page_container">
+  <div class="page-container">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigtion-link navigtion-link-current" href="about.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="about.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigtion-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigtion-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-      <a class="header-logo" href="index.html"><img src="./images/logo-sedona.svg" width="138" height="70" alt="Лого седона"></a>
+      <a class="header-logo" href="index.html"><img src="./images/logo-sedona.svg" width="138" height="70" alt="Лого седона."></a>
        <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigtion-link-icon" href="#">
+          <a class="navigation-link-icon" href="#">
             <svg class="navigation-icon" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/></g><defs><clipPath id="a"><path d="M0 0h18v18H0z"/></clipPath></defs></svg>
             <span class="visually-hidden">Поиск</span></a>
         </li>
         <li class="navigation-item">
-          <a class="navigtion-link-icon navigtion-link-round" href="#"><span class="round-green">12</span>
+          <a class="navigation-link-icon navigation-link-round" href="#"><span class="round-green">12</span>
             <svg class="navigation-icon" width="18" height="17" viewBox="0 0 18 17"  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
             <span class="visually-hidden">Избранное</span></a>
         </li>
@@ -40,7 +40,7 @@
     </header>
 <main class="main-inner">
   <section class="catalog-container-bg">
-  <header class="inner-header">
+   <header class="inner-header">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item breadcrumbs-user">
@@ -112,25 +112,25 @@
         </fieldset>
         <fieldset class="catalog-filter-group catalog-filter-range">
           <legend class="catalog-filter-title catalog-filter-title-price">Стоимость, ₽:</legend>
-          <div class="range">
-          <div class="range-wrapper-inputs">
-            <label class="catalog-filter-label">
-              <input type="number" class="catalog-filter-input" name="min-price" value="0" placeholder="от">
+            <div class="range">
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+              <input type="number" class="catalog-filter-input" name="min-price" value="0">
             </label>
             <label class="catalog-filter-label">
-              <input type="number" class="catalog-filter-input catalog-filter-input-2" name="max-price" value="9000" placeholder="до">
+              <input type="number" class="catalog-filter-input catalog-filter-input-2" name="max-price" value="9000">
             </label>
-          </div>
+              </div>
           <div class="range-scale">
             <div class="range-bar" style="left: 10px; width: 216px">
-          <button class="range-toggle toggle-min" type="button">
-            <span class="visually-hidden">Изменить минимальную цену.</span>
-           </button>
-          <button class="range-toggle toggle-max" type="button">
-            <span class="visually-hidden">Изменить максимальную цену.</span>
-          </button>
+              <button class="range-toggle toggle-min" type="button">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button class="range-toggle toggle-max" type="button">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+            </div>
           </div>
-        </div>
           </div>
         </fieldset>
        <div class="catalog-buttons">
@@ -139,26 +139,26 @@
        </div>
       </form>
   </section>
-  <div class="sorting-container">
+      <div class="sorting-container">
         <p class="search-hotels">Найдено гостиниц: 38</p>
-      <form class="sorting-type">
-        <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select name="sorting" id="sorting" class="select-control">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="popular">Популярные</option>
-            <option value="expensive">Сначала дорогие</option>
+        <form class="sorting-type" action="https://echo.htmlacademy.ru/">
+          <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select name="sorting" id="sorting" class="select-control">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="popular">Популярные</option>
+              <option value="expensive">Сначала дорогие</option>
           </select>
-          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
-      <div class="sorting-user-container">
-        <a href="#" class="sorting-user-item sorting-catalog-button">
-          <svg class="sorting-icon" width="16" height="14"  viewBox="0 0 16 14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
-          <span class="visually-hidden">отобразить в виде карточек</span>
-        </a>
-         <a href="#" class="sorting-user-item sorting-cards-button">
-          <svg class="sorting-icon" width="16" height="14" viewBox="0 0 16 14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
+        <div class="sorting-user-container">
+          <a href="#" class="sorting-user-item sorting-catalog-button">
+            <svg class="sorting-icon" width="16" height="14"  viewBox="0 0 16 14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
+            <span class="visually-hidden">отобразить в виде карточек</span>
+          </a>
+            <a href="#" class="sorting-user-item sorting-cards-button">
+            <svg class="sorting-icon" width="16" height="14" viewBox="0 0 16 14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
         <span class="visually-hidden">отобразить в виде карточек с подробным описанием</span>
-         </a>
+            </a>
           <a href="#" class="sorting-user-item sorting-button">
             <svg width="16" height="14" viewBox="0 0 16 14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
         <span class="visually-hidden">отобразить в виде списка</span>
@@ -169,7 +169,7 @@
       <ul class="product-list">
         <li class="product-card">
           <a href="#" class="product-image-wrapper">
-            <img src="./images/hotel-1.jpg" width="180" height="120" alt="гостинница Amara" class="product-card-image">
+            <img src="./images/hotel-1.jpg" width="180" height="120" alt="гостинница Amara." class="product-card-image">
           </a>
           <div class="product-card-wrapper">
             <a href="" class="product-card-link">
@@ -189,7 +189,7 @@
         </li>
         <li class="product-card">
           <a href="#" class="product-image-wrapper">
-          <img src="./images/hotel-2.jpg" width="180" height="120" alt="мотель Desert" class="product-card-image">
+          <img src="./images/hotel-2.jpg" width="180" height="120" alt="мотель Desert." class="product-card-image">
         </a>
         <div class="product-card-wrapper">
           <a href="" class="product-card-link">
@@ -209,7 +209,7 @@
         </li>
         <li class="product-card">
           <a href="#" class="product-image-wrapper">
-            <img src="./images/hotel-3.jpg" width="180" height="120" alt="апартаменты Villas" class="product-card-image">
+            <img src="./images/hotel-3.jpg" width="180" height="120" alt="апартаменты Villas." class="product-card-image">
           </a>
           <div class="product-card-wrapper">
             <a href="" class="product-card-link">
@@ -229,7 +229,7 @@
         </li>
         <li class="product-card">
           <a href="#" class="product-image-wrapper">
-            <img src="./images/hotel-4.jpg" width="180" height="120" alt="гостиница GreenTree Inn" class="product-card-image">
+            <img src="./images/hotel-4.jpg" width="180" height="120" alt="гостиница GreenTree Inn." class="product-card-image">
           </a>
           <div class="product-card-wrapper">
             <a href="" class="product-card-link">
@@ -251,7 +251,7 @@
         <a href="#" class="product-show-more">Загрузить еще</a>
     </div>
     <div class="pagination-wrapper">
-    <ul class="pagination">
+      <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -270,20 +270,21 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
-    </ul>
+      </ul>
       <form class="page-number" action="https://echo.htmlacademy.ru/">
+        <label class="visually-hidden" for="sorting">Страницы с гостиницами</label>
         <span class="page-number-hotel">Гостиниц на странице:</span>
-        <select name="page" id="page" class="select-page">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4" selected>4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
+          <select name="page" id="page" class="select-page">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
         </select>
       </form>
     </div>
@@ -325,7 +326,7 @@
     <a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
   </section>
   <section class="footer-academy">
-    <a class="about-text" href="https://htmlacademy.ru/"> <img class="htmlacademy-link" src="./images/logo-footer.svg" width="115" height="34" alt="Лого html academy"></a>
+    <a class="about-text" href="https://htmlacademy.ru/"> <img class="htmlacademy-link" src="./images/logo-footer.svg" width="115" height="34" alt="Лого html academy."></a>
   </section>
 </div>
 </body>

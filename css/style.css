@@ -19,7 +19,7 @@ html {
   height: 100%;
 }
 
-.page_container {
+.page-container {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -57,7 +57,7 @@ body {
   justify-content: space-between;
 }
 
-.navigtion-link-icon {
+.navigation-link-icon {
   width: 35px;
   height: 35px;
   display: flex;
@@ -71,7 +71,7 @@ body {
 }
 
 .navigation-icon:focus-visible {
-  box-shadow: 0 0 0 4px #68a2ca;
+  box-shadow: 0 0 0 3px #68a2ca;
   outline: none;
   border-radius: 4px;
 }
@@ -92,7 +92,7 @@ body {
 
 /*  похожая ситуация, выставляю размеры и у меня линия снизу, под ширину блока стает и ломается блок */
 
-.navigtion-link {
+.navigation-link {
   display: block;
   position: relative;
   margin-right: 34px;
@@ -104,7 +104,7 @@ body {
   text-decoration: none;
 }
 
-.navigtion-link-round {
+.navigation-link-round {
   position: relative;
   z-index: 5;
   margin-right: 24px;
@@ -126,21 +126,21 @@ body {
   z-index: 10;
 }
 
-.navigtion-link:hover {
+.navigation-link:hover {
   color: #756257;
 }
 
-.navigtion-link:focus-visible {
+.navigation-link:focus-visible {
   outline: 3px solid #68a2ca;
   outline-offset: 5px;
   border-radius: 4px;
 }
 
-.navigtion-link:active {
+.navigation-link:active {
   opacity: 0.3;
 }
 
-.navigtion-link-current::after {
+.navigation-link-current::after {
   position: absolute;
   right: 0;
   top: 45px;
@@ -163,8 +163,8 @@ body {
   justify-content: flex-end;
 }
 
-.navigtion-link-icon:focus-visible {
-  box-shadow: inset 0 0 0 4px #68a2ca;
+.navigation-link-icon:focus-visible {
+  box-shadow: inset 0 0 0 3px #68a2ca;
   outline: none;
   border-radius: 10px;
 }
@@ -191,7 +191,7 @@ body {
 }
 
 .navigation-user-button:focus-visible {
-  box-shadow: inset 0 0 0 4px #68a2ca;
+  box-shadow: inset 0 0 0 3px #68a2ca;
   outline: none;
   border-radius: 5px;
 }
@@ -210,6 +210,7 @@ body {
   height: 485px;
   background-image: url("../images/index-divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
+  background-color: #333333;
   margin-bottom: 63px;
   background-position: bottom;
 }
@@ -286,7 +287,7 @@ body {
 }
 
 .intrested-link:focus-visible {
-  box-shadow: 0 0 0 4px #68a2ca;
+  box-shadow: 0 0 0 3px #68a2ca;
   outline: none;
 }
 
@@ -301,6 +302,7 @@ body {
   padding-top: 64px;
   text-align: center;
   color: #ffffff;
+  background-color: #333333;
   background-image: url("../images/background-interested.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -467,7 +469,7 @@ body {
 }
 
 .footer-social-link:focus-visible {
-  box-shadow: 0 0 0 4px #68a2ca;
+  box-shadow: 0 0 0 3px #68a2ca;
   outline: none;
   border-radius: 4px;
 }
@@ -692,6 +694,7 @@ body {
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #333333;
   color: #ffffff;
   padding-left: 72px;
   padding-right: 72px;
@@ -1138,6 +1141,16 @@ body {
   border-radius: 4px;
 }
 
+.sorting-user-item:hover {
+  outline: 2px solid #83b3d3;
+  border: none;
+}
+
+.sorting-user-item:focus-visible {
+  outline: 2px solid #83b3d3;
+  border: none;
+}
+
 .sorting-user-item:nth-child(3) {
   margin-right: 0;
 }
@@ -1308,7 +1321,7 @@ body {
 }
 
 .product-card-button-blue:focus-visible {
-  box-shadow: 0 0 0 4px #756257;
+  box-shadow: 0 0 0 3px #756257;
   outline: none;
   border-radius: 4px;
 }
@@ -1340,7 +1353,7 @@ body {
 }
 
 .product-card-button-green:focus-visible {
-  box-shadow: 0 0 0 4px #756257;
+  box-shadow: 0 0 0 3px #756257;
   outline: none;
   border-radius: 4px;
 }
@@ -1403,7 +1416,6 @@ body {
 }
 
 .product-show-more {
-  border-top: 1px solid #e6e6e6;
   display: block;
   max-width: 595px;
   padding: 14px;
