@@ -221,7 +221,7 @@ body {
   background-repeat: no-repeat;
   background-color: #333333;
   margin-bottom: 63px;
-  background-size: cover cover;
+  background-size: auto, cover;
   background-position: bottom;
 }
 
