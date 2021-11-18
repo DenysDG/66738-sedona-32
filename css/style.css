@@ -124,6 +124,10 @@ body {
   z-index: 10;
 }
 
+.round-green:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .navigation-link:hover {
   color: #756257;
 }
@@ -427,6 +431,7 @@ body {
 
 .footer-social {
   width: 170px;
+  padding-bottom: 15px;
 }
 
 .footer-social-link {
@@ -462,7 +467,7 @@ body {
 .footer-social-item {
   width: 20px;
   height: 16px;
-  margin-right: 24px;
+  margin-right: 21px;
   margin-bottom: 5px;
 }
 
@@ -515,7 +520,7 @@ body {
 }
 
 .about-text:hover {
-  color: #756257;
+  fill: #756257;
 }
 
 .about-text:focus-visible {
